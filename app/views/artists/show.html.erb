@@ -1,0 +1,6 @@
+<h1><%= @artist.name %></h1>
+<%= image_tag @artist.image_path %> <br/>
+
+<%= link_to "Edit", edit_artist_path %>
+
+<%= link_to "Delete", artist_path(@artist), method: 'DELETE' %>
