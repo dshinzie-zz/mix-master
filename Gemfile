@@ -31,7 +31,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 gem 'rails_12factor', group: :production
 
-gem 'launchy'
 gem 'rb-readline'
 
 group :development, :test do
@@ -40,6 +39,9 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'capybara'
   gem 'shoulda-matchers'
+  gem 'launchy'
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
 end
 
 group :development do
