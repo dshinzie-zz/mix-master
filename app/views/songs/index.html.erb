@@ -6,10 +6,11 @@
 
 <% @songs.each do |song| %>
   <ul id="songs">
-    <li><%=link_to song.title, song_path(song) %> </li>
+    <li><%=link_to song.title, song_path(song) %> <span> <%= link_to "Delete", song_path(song), method: "DELETE" %> </span> </li>
   </ul>
 <% end %>
 
 <% if @artist %>
   <%= link_to "Back", artist_path(@artist) %>
 <% end %>
+
