@@ -1,0 +1,15 @@
+<% if @artist %>
+  <h1>All Songs for <%=@artist.name %></h1>
+<% else %>
+  <h1>All Songs</h1>
+<% end %>
+
+<% @songs.each do |song| %>
+  <ul id="songs">
+    <li><%=link_to song.title, song_path(song) %> </li>
+  </ul>
+<% end %>
+
+<% if @artist %>
+  <%= link_to "Back", artist_path(@artist) %>
+<% end %>
