@@ -4,8 +4,8 @@
   <% @playlist.songs.each do |song| %>
     <li><%= link_to song.title, song %></li>
   <% end %>
-</ul>
+</ul><br/>
 
-<%= link_to "Edit", edit_playlist_path(@playlist) %><br/>
+<%= link_to "Edit", edit_playlist_path(@playlist) %><br/><br/>
 
 <%= link_to "Back", playlists_path %>
