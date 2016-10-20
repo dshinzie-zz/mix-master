@@ -24,9 +24,10 @@ body
   background-position: center;
 }
 
-ul
+ul, li
 {
-  display: inline-block;
+  list-style-type: none;
+  margin-left: -1.2%;
 }
 
 h1

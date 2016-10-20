@@ -11,7 +11,7 @@ RSpec.feature "User submits a new song" do
     click_on "Create Song"
 
     expect(page).to have_content song_title
-    expect(page).to have_link "Back",  href: artist_path(artist)
+    expect(page).to have_link "Back to Artist",  href: artist_path(artist)
   end
 
   context "the submitted data is invalid" do
@@ -27,5 +27,3 @@ RSpec.feature "User submits a new song" do
     end
   end
 end
-
-

@@ -12,7 +12,7 @@ RSpec.feature "User submits a new song" do
     click_on "Update Song"
 
     expect(page).to have_content new_song_title
-    expect(page).to have_link "Back", href: artist_path(artist)
+    expect(page).to have_link "Back to Artist", href: artist_path(artist)
   end
 
   scenario "they edit with invalid data" do
