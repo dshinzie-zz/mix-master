@@ -1,6 +1,9 @@
 <h1>New Song</h1>
 <p>Add a new song for <%= @artist.name %></p>
 
-<%= render partial: 'form' %>
+<section class="new">
+  <%= render partial: 'form' %>
+</section></br>
+
 <%= link_to "Back to Artist" , artist_path(@artist) %><br/>
 <%= link_to "Back to Songs" , songs_path %><br/>

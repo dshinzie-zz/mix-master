@@ -1,6 +1,9 @@
 <h1>Edit Song</h1>
 <p>Edit song for <%= @song.title %></p>
 
-<%= render partial: 'form' %>
+<section class="new">
+  <%= render partial: 'form' %>
+</section></br>
+
 
 <%= link_to "Back", song_path(@song) %>

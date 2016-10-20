@@ -28,7 +28,6 @@ body
 h1
 {
   padding-top: 3%;
-  padding-bottom: 3%;
   font-size: 46px;
   font-family: "Trebuchet MS", Helvetica, sans-serif
 }
@@ -84,4 +83,9 @@ a
 #checkbox
 {
   text-align: center;
+}
+
+.new
+{
+  padding-top: 5%;
 }
