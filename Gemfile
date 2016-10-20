@@ -42,6 +42,8 @@ group :development, :test do
   gem 'launchy'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+  gem 'omniauth-oauth2'
+  gem "figaro"
 end
 
 group :development do
@@ -49,4 +51,3 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'better_errors'
 end
-
