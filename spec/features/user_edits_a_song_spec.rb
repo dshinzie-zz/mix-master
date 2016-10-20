@@ -14,6 +14,16 @@ RSpec.feature "User submits a new song" do
     expect(page).to have_content new_song_title
     expect(page).to have_link "Back", href: artist_path(artist)
   end
+
+  scenario "they edit with invalid data" do
+    artist = create(:artist)
+    song = artist.songs.create(title: "What is Love?")
+
+    visit song_path(song)
+    click_on 'Edit'
+    fill_in "song_title", with: ""
+    click_on "Update Song"
+
+    expect(page).to have_content "Title can't be blank"
+  end
 end
-
-

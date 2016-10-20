@@ -8,9 +8,11 @@
   <ul id="songs">
     <li><%=link_to song.title, song_path(song) %> <span> <%= link_to "Delete", song_path(song), method: "DELETE" %> </span> </li>
   </ul>
-<% end %>
+<% end %><br/>
 
 <% if @artist %>
   <%= link_to "Back", artist_path(@artist) %>
-<% end %>
+<% end %> <br/>
 
+<%= link_to "All Artists", artists_path %><br/>
+<%= link_to "All Playlists", playlists_path %>

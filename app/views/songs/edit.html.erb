@@ -2,3 +2,5 @@
 <p>Edit song for <%= @song.title %></p>
 
 <%= render partial: 'form' %>
+
+<%= link_to "Back", song_path(@song) %>

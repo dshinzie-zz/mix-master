@@ -1,10 +1,12 @@
 <h1>All Artists</h1>
 
-<%= link_to "New artist", new_artist_path %>
+<%= link_to "New artist", new_artist_path %> <br/>
 
 <% @artists.each do |artist| %>
   <ul>
     <li><%= link_to artist.name, artist_path(artist) %> </li>
   </ul>
-<% end %>
+<% end %> <br/>
 
+<%= link_to "All Songs", songs_path %><br/>
+<%= link_to "All Playlists", playlists_path %>
